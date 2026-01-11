@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block common bot paths
+Disallow: /assets/vendor.js
+Disallow: /assets/main.js
+Disallow: /.well-known/
+
+# Allow specific important directories
+Allow: /assets/
+Allow: /images/
