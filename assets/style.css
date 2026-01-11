@@ -400,7 +400,6 @@ spoiler-text {
   -webkit-text-stroke: 0;
   background-color: rgba(32, 32, 32, 0.75);
   text-shadow: none;
-  text-stroke: 0;
   color: transparent;
   cursor: pointer;
   transition: color 0.1s ease-in-out;
@@ -534,7 +533,9 @@ body.is-instant::after {
 }
 .image-component > .frame {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
@@ -1453,4 +1454,312 @@ body.is-instant::after {
 }
 [data-action='email'] {
   background: #6c757d;
+}
+
+/* New styles for added elements */
+
+/* H2 heading styling */
+h1 {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: -0.025rem;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* H2 heading styling */
+h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: -0.025rem;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Links section styling */
+.links-section {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.links-section h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1rem !important;
+  text-transform: uppercase;
+}
+
+.links-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-section li {
+  margin: 0;
+}
+
+.links-section a {
+  color: #ffb4a3;
+  text-decoration: underline;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  transition: color 0.25s ease, text-decoration 0.25s ease;
+}
+
+.links-section a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Share button styling */
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin: 1.5rem 0;
+  text-decoration: none;
+}
+
+.share-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.share-button svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* Share-lite component styling */
+.share-lite {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+/* Advocacy section styling */
+.advocacy-section {
+  margin: 2rem 0;
+}
+
+.advocacy-section h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1rem !important;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Footer styling */
+.footer-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Disclaimer section styling */
+.disclaimer-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+}
+
+.disclaimer-section h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1rem !important;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.disclaimer-content h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1.5rem 0 0.75rem 0;
+  text-align: left;
+}
+
+.disclaimer-content h4:first-child {
+  margin-top: 0;
+}
+
+.disclaimer-content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.disclaimer-content ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.disclaimer-content li {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.disclaimer-content strong {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.disclaimer-content em {
+  color: rgba(255, 180, 163, 0.9);
+  font-style: italic;
+}
+
+.disclaimer-signature {
+  margin-top: 2rem !important;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  font-size: 0.85em !important;
+}
+
+/* Responsive adjustments for new elements */
+@media (max-width: 736px) {
+  h2 {
+    font-size: 0.85em;
+    margin-bottom: 1.25rem !important;
+    text-align: center;
+  }
+  
+  .links-section {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .links-section h3 {
+    font-size: 1em;
+  }
+  
+  .links-section ul {
+    align-items: center;
+  }
+  
+  .links-section a {
+    font-size: 0.85em;
+  }
+  
+  .share-button {
+    font-size: 0.85em;
+    padding: 0.625rem 1.25rem;
+    margin: 1.25rem auto;
+  }
+  
+  .share-lite {
+    justify-content: center;
+  }
+  
+  .advocacy-section {
+    margin: 1.5rem 0;
+  }
+  
+  .advocacy-section h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .disclaimer-section {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+  }
+  
+  .disclaimer-section h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .disclaimer-content h4 {
+    font-size: 0.95em;
+  }
+  
+  .disclaimer-content p,
+  .disclaimer-content li {
+    font-size: 0.85em;
+  }
+  
+  .copyright {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 480px) {
+  .links-section ul {
+    gap: 0.5rem;
+  }
+
+  .share-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8em;
+  }
+}
+
+body {
+  text-align: left;
 }

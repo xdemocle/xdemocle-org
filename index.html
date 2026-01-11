@@ -128,7 +128,13 @@
                 title="Old xdemocle&#39;s avatar"
             /></span>
           </div>
-          <h1>xdemocle | Rocco R. Ethical Tech & B2B Partner</h1>
+          <h1 class="site-title">
+            xdemocle | Rocco R. Ethical Tech & B2B Partner
+          </h1>
+          <h2 class="site-subtitle">
+            B2B Web Engineer & Solopreneur / Faith-Led Builder / Remote-First /
+            Purpose-Driven
+          </h2>
           <ul id="icons01" class="icons-component instance-1">
             <li style="opacity: 1; transform: none">
               <a
@@ -161,7 +167,7 @@
             <li style="opacity: 1; transform: none">
               <a
                 class="n03"
-                onclick="_clipboard(event, &#39;hello@rocco.me&#39;);"
+                onclick='_clipboard(event, "hello@rocco.me");'
                 role="button"
                 ><svg aria-labelledby="icons01-icon-3-title">
                   <title id="icons01-icon-3-title">Email</title>
@@ -228,22 +234,116 @@
               >
             </li>
           </ul>
+          <section id="links" class="links-section">
+            <h3>Important Links</h3>
+            <ul>
+              <li>
+                <a href="https://lnk.bio/help-for-help" target="_blank"
+                  >Help: Social Fundraising Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://web3.okx.com/nft/collection/eth/a-window-into-gxza?shortCode=36iAiSE"
+                  target="_blank"
+                  >NFT: okx.com</a
+                >
+              </li>
+            </ul>
+          </section>
+          <div
+            class="share-lite"
+            id="myShare"
+            data-title="Check this out - xdemocle | Rocco R. Ethical Tech & B2B Partner"
+            data-url="https://xdemocle.org"
+          >
+            <button data-action="native" aria-label="Share">
+              📎<span>Share</span>
+            </button>
+            <a data-action="x" role="button" aria-label="Share to X"
+              ><span>X</span></a
+            >
+            <a
+              data-action="linkedin"
+              role="button"
+              aria-label="Share to LinkedIn"
+              ><span>LinkedIn</span></a
+            >
+            <a
+              data-action="facebook"
+              role="button"
+              aria-label="Share to Facebook"
+              ><span>Facebook</span></a
+            >
+            <a
+              data-action="whatsapp"
+              role="button"
+              aria-label="Share to WhatsApp"
+              ><span>WhatsApp</span></a
+            >
+            <a
+              data-action="telegram"
+              role="button"
+              aria-label="Share to Telegram"
+              ><span>Telegram</span></a
+            >
+            <a data-action="bluesky" role="button" aria-label="Share to Bluesky"
+              ><span>Bluesky</span></a
+            >
+            <a
+              data-action="mastodon"
+              role="button"
+              aria-label="Share to Mastodon"
+              ><span>Mastodon</span></a
+            >
+          </div>
           <hr
             id="divider03"
             class="divider-component instance-3 style-1 full"
           />
-          <div id="list01" class="list-component instance-1">
-            <ul>
-              <li><p>Child Abuse Prevention Advocate</p></li>
-              <li><p>Anti-War Supporter</p></li>
-              <li><p>Mentorship Program Advocate</p></li>
-              <li><p>Women in Business Empowerer</p></li>
-            </ul>
-          </div>
+          <section id="advocacy" class="advocacy-section">
+            <h3>Advocacy & Causes</h3>
+            <div id="list01" class="list-component instance-1">
+              <ul>
+                <li><p>Child Abuse Prevention Advocate</p></li>
+                <li><p>Anti-War Supporter</p></li>
+                <li><p>Mentorship Program Advocate</p></li>
+                <li><p>Women in Business Empowerer</p></li>
+              </ul>
+            </div>
+          </section>
           <hr
             id="divider05"
             class="divider-component instance-5 style-1 full"
           />
+          <section id="disclaimer" class="disclaimer-section">
+            <h3>Important Notice</h3>
+            <div class="disclaimer-content">
+              <h4>Fundraising Activities Suspended</h4>
+              <p>Effective immediately, I am no longer organizing fundraising campaigns.</p>
+              <p>After months of supporting families in Gaza and other humanitarian causes, I've had to suspend all fundraising activities due to:</p>
+              <ul>
+                <li><strong>Administrative complexity</strong>: Managing funds through personal accounts created significant legal and tax compliance issues in Italy</li>
+                <li><strong>Banking restrictions</strong>: Multiple account closures and compliance challenges made operations unsustainable</li>
+                <li><strong>Personal circumstances</strong>: I need to focus on my primary work and personal matters</li>
+              </ul>
+              
+              <h4>What This Means</h4>
+              <ul>
+                <li>All active campaigns are being closed</li>
+                <li>Funds already collected will be transferred to intended beneficiaries</li>
+                <li>No new campaigns will be launched through this platform</li>
+                <li>I will not be accepting donations or organizing future fundraisers</li>
+              </ul>
+              
+              <h4>Transparency Note</h4>
+              <p>All fundraising activities conducted through this site were done as a volunteer intermediary. I received <em>zero compensation</em> and all funds (minus platform fees) were transferred to beneficiaries. Tax and compliance documentation for 2025 activities will be properly filed with Italian authorities.</p>
+              
+              <p>Thank you to everyone who trusted me with their donations and stories. I did my best within my capacity.</p>
+              
+              <p class="disclaimer-signature">— Rocco Russo (xdemocle)<br>Last updated: January 2026</p>
+            </div>
+          </section>
           <hr
             id="divider02"
             class="divider-component instance-2 style-1 full"
@@ -263,7 +363,7 @@
                   >
                     <a href="https://rocco.me/" target="_blank" class="frame"
                       ><img
-                        src="assets/rocco-me-avatar"
+                        src="assets/rocco-me-avatar.jpg"
                         alt="rocco-avatar"
                         title="Rocco&#39;s Avatar"
                     /></a>
@@ -288,11 +388,13 @@
             id="divider04"
             class="divider-component instance-4 style-1 full"
           />
-
-          <hr
-            id="divider01"
-            class="divider-component instance-1 style-1 full"
-          />
+          <footer id="footer" class="footer-section">
+            <hr
+              id="divider01"
+              class="divider-component instance-1 style-1 full"
+            />
+            <p class="copyright">© Rocco Russo</p>
+          </footer>
         </div>
       </div>
     </div>
